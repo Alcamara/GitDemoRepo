@@ -1,18 +1,21 @@
 package com.example.myapplist;
 
-import java.util.ArrayList;
-
 public class AppRepository {
 
-    static String getAppListings(){
-        ArrayList<AppListingModel> getAppListings  = new ArrayList<>();
-
+    static String[] getAppListings(){
 
         //split raw data
-      final String[] line = APP_DATA1.split("\n");
-      final String[] line2 = APP_DATA2.split("\n");
+      final String[] appString = APP_DATA1.split("\n");
+      final String[][] appValues = new String[appString.length][];
+      /*for(int i = 0; i < appString.length; ++i){
+          appValues[i] = appString[i].split(",");
+      }*/
 
-        return null;
+        for (String a : appString) {
+            a = appString[a].split(',');
+        }
+
+        return appString;
     }
 
     // Raw Data from Mockdata
