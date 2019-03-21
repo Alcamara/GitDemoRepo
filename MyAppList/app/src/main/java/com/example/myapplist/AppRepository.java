@@ -1,18 +1,25 @@
 package com.example.myapplist;
 
+import java.util.ArrayList;
+
 public class AppRepository {
 
     static String[] getAppListings(){
 
         //split raw data
       final String[] appString = APP_DATA1.split("\n");
-      final String[][] appValues = new String[appString.length][];
-      /*for(int i = 0; i < appString.length; ++i){
+
+      //create Array using AppListModel type
+        ArrayList<AppListingModel> AppListings  = new ArrayList<>();
+
+        /*final String[][] appValues = new String[appString.length][];
+      for(int i = 0; i < appString.length; ++i){
           appValues[i] = appString[i].split(",");
       }*/
 
         for (String a : appString) {
-            a = appString[a].split(',');
+            //array AppString =aAS
+         String Array() =  a.split(",");
         }
 
         return appString;
