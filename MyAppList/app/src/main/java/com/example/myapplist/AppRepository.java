@@ -1,12 +1,23 @@
 package com.example.myapplist;
 
-public class AppListingRawData {
-    //app_version,
+import java.util.ArrayList;
 
+public class AppRepository {
+
+    static String getAppListings(){
+        ArrayList<AppListingModel> getAppListings  = new ArrayList<>();
+
+
+        //split raw data
+      final String[] line = APP_DATA1.split("\n");
+      final String[] line2 = APP_DATA2.split("\n");
+
+        return null;
+    }
 
     // Raw Data from Mockdata
 
-    private final String RAW_APP_DATA1 = "id,app_name,app_version,domain_name,contact_email,image_url\n" +
+    private static final String APP_DATA1 = "id,app_name,app_version,domain_name,contact_email,image_url\n" +
             "1,Tresom,0.18,php.net,bboick0@bravesites.com,http://dummyimage.com/169x140.jpg/dddddd/000000\n" +
             "2,Cookley,0.86,cbslocal.com,jkobierra1@webs.com,http://dummyimage.com/131x216.bmp/cc0000/ffffff\n" +
             "3,Zoolab,3.09,economist.com,istiling2@wikipedia.org,http://dummyimage.com/241x129.jpg/5fa2dd/ffffff\n" +
@@ -232,7 +243,7 @@ public class AppListingRawData {
             "223,Prodder,0.93,webmd.com,mspread66@omniture.com,http://dummyimage.com/234x182.png/ff4444/ffffff\n" +
             "224,Sonsing,3.9.1,blogs.com,cbailie67@un.org,http://dummyimage.com/180x179.png/dddddd/000000\n";
 
-    private final String RAW_APP_DATA2 = "225,Span,9.4,google.de,crounds68@xing.com,http://dummyimage.com/222x212.png/cc0000/ffffff\n" +
+    private static final String APP_DATA2 = "225,Span,9.4,google.de,crounds68@xing.com,http://dummyimage.com/222x212.png/cc0000/ffffff\n" +
             "226,Bitwolf,1.61,noaa.gov,amessier69@wikispaces.com,http://dummyimage.com/125x189.jpg/cc0000/ffffff\n" +
             "227,Zathin,0.34,virginia.edu,gguinane6a@ed.gov,http://dummyimage.com/124x171.jpg/dddddd/000000\n" +
             "228,Ventosanzap,0.99,list-manage.com,ablesli6b@hp.com,http://dummyimage.com/215x127.png/ff4444/ffffff\n" +
