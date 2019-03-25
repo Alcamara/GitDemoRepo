@@ -14,9 +14,7 @@ public class ImageData implements Serializable {
         this.name = name;
     }
 
-    public ImageData(String name) {
-        this.name = name;
-    }
+
 
 
     public Uri getImageData() {
